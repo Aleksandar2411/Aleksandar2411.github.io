@@ -1,17 +1,17 @@
 
 
 // changing individual properties with code and using setInterval
-var rotationSpeedX = 0.01;
-var rotationSpeedY = 0.01;
-var rotationSpeedZ = 0.01;
+var rotationSpeedX = 0.001;
+var rotationSpeedY = 0.001;
+var rotationSpeedZ = 0.001;
 var myOtherBox = document.getElementById('myOtherBox');
 
 function spin(){
-myOtherBox.object3D.rotation.x -= rotationSpeedX*2;
+myOtherBox.object3D.rotation.x -= rotationSpeedX;
 console.log(myOtherBox.object3D.rotation.X);
-myOtherBox.object3D.rotation.y -= rotationSpeedY*2;
+myOtherBox.object3D.rotation.y -= rotationSpeedY;
 console.log(myOtherBox.object3D.rotation.y);
-myOtherBox.object3D.rotation.y -= rotationSpeedZ*2;
+myOtherBox.object3D.rotation.y -= rotationSpeedZ;
 console.log(myOtherBox.object3D.rotation.z);
 }
 
